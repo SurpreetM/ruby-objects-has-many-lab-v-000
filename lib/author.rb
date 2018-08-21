@@ -12,5 +12,9 @@ class Author
     @posts
   end
 
+  def add_post(post)
+    post = Post.new(post)
+    post.author = self
+
 
 end
